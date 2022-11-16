@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var token="web-insecure;34829sjdfnsj32984madskj"
+
+		for (i of token){
+			if(i==";"){
+				token=token.replace(token.substr(0,token.indexOf(i)+1),"")
+			}
+		}
+
+			console.log(token)
+	</script>
+
+</body>
+</html>

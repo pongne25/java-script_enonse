@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		
+		
+		function somPwodwi(c) {
+			c=c.split(" ")
+		var v=[]
+		for (j of c){
+			var s=0
+			if(j.length>1){
+				for (x of j){
+					s=s+parseInt(x)
+				}
+				v.push(s);
+
+			}
+			else{
+				v.push(parseInt(j))
+			}
+		}
+		var rez=1;
+		for(i=0;i<v.length;i++){
+
+			rez=rez*v[i]
+		}
+			return rez;
+		}
+
+		(somPwodwi("5 45 123 12"))
+	</script>
+
+</body>
+</html>
