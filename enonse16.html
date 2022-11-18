@@ -15,18 +15,33 @@
         char=char.split(" ")
         let n=[]
         let m
+        let x="1234567890"
+        
 
         for (i of char){
-            x=parseInt(i[1])
+            let t=[]
+            
+            for(j of i){
+                 if(x.includes(j)){
+                t.push(j)
+            }
+            }
+           
+           
+           t=parseInt(t.join(""))
+
+
+           
+
 
             if(i[0]=="<" && alf.includes(i[2])){
-                    a=alf.indexOf(i[2])-x
+                    a=alf.indexOf(i[2])-t
                     a=alf[a]
 
             
             }
-            else if(i[0]==">" && alf.includes(i[3])){
-                 a=alf.indexOf(i[3])-x
+            else if(i[0]=="<" && alf.includes(i[3])){
+                 a=alf.indexOf(i[3])-t
                   a=alf[a]
 
                 
@@ -34,13 +49,13 @@
             }   
            
             if(i[0]==">" && alf.includes(i[2])){
-                    a=alf.indexOf(i[2])+x
+                    a=alf.indexOf(i[2])+t
                     a=alf[a]
 
                  
             }
             else if(i[0]==">" && alf.includes(i[3])){
-                 a=alf.indexOf(i[3])+x
+                 a=alf.indexOf(i[3])+t
                   a=alf[a]
                 
             }   
@@ -55,7 +70,9 @@
 
 
     console.log(moKache("<1T >7H >3C <5Y >4S >0A <5W >4A"))
-    console.log(moKache(">3A >0A <1U >0A >1A <9J <0S >4A"))
+    console.log(moKache(">5K <0Y <3W <3K <6U <3Q"))
+    console.log(moKache("<14P <1V <1H >4O"))
+    console.log(moKache(">3A >0A <1U <10K >1A <9J <0S <16U"))
     </script>
 
 </body>
